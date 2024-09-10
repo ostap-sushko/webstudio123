@@ -40,6 +40,12 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
 }
+.header-link:hover{
+color: var(--accent-color);
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;}
 .header-link{
 color: var(--additional-text);
 font-size: 14px;
