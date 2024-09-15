@@ -116,6 +116,11 @@ body {
   letter-spacing: 1.08px;
 }
 
+.team{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-subject {
   color: var(--text-color);
   text-align: center;
@@ -141,6 +146,11 @@ body {
   line-height: 1.187;
   letter-spacing: 0.48px;
 }
+.footer {
+  background-color: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -157,9 +167,7 @@ body {
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
-.footer {
-  background-color: var(--footer-background);
-}
+
 .footer-link {
   color: var(--main-color);
   font-size: 14px;
