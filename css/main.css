@@ -16,6 +16,11 @@ margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
 padding-right: 15px;
+outline: 1px solid red;
+}
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
   
 
@@ -62,6 +67,10 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
 }
+.btn{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .btn-button{
 
 color:var(--text-color);
@@ -87,7 +96,8 @@ line-height: 1.85;
 letter-spacing: 0.48px;
 }
 .footer{
-
+padding-top: 60px;
+padding-bottom: 60px;
 background-color: var(--footer-background);
 }
 .footer-logo{

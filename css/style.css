@@ -18,6 +18,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 .header{
   padding-top: 24px;
@@ -92,6 +93,9 @@ body {
   line-height: 1.87;
   letter-spacing: 0.96px;
 }
+.management{
+  padding-top: 94px;
+}
 .management-title {
   color: var(--text-color);
   font-size: 14px;
@@ -106,6 +110,10 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+}
+.work{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .work-title {
   color: var(--text-color);
