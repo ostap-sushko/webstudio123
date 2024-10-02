@@ -149,6 +149,7 @@ letter-spacing: 0.96px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 
 .work-list{
@@ -159,7 +160,7 @@ letter-spacing: 0.96px;
 .team{
   padding-top: 94px;
   padding-bottom: 94px;
-
+  background-color: var(--team-background);
 }
 
 .team-subject {
@@ -178,8 +179,14 @@ letter-spacing: 0.96px;
 .team-img{
 width: 270px;
 height: 260px;
-margin-top: 144px;
+
 }
+.div-item{
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: var(--main-color);
+}
+
 .team-title {
   color: var(--text-color);
   text-align: center;
