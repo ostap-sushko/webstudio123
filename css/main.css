@@ -101,13 +101,14 @@ letter-spacing: 0.28px;
 }
 .btn-list{
     display: flex;
-    margin-top: 100px;
+
     margin-bottom: 50px;
  justify-content: center;
  gap: 8px;
 }
 .btn-button{
-    
+width: 125px;
+height: 38px;
 color:var(--text-color);
 text-align: center;
 font-size: 16px;
@@ -126,6 +127,12 @@ margin-bottom: 94px;
 }
 .table-img{
 width: 370px;
+}
+.table-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .table-title{
 color: var(--text-color);
@@ -169,6 +176,7 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
+margin-bottom: 20px;
 }
 
 .footer-link{
@@ -177,6 +185,15 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
+margin-bottom: 9px;
+}
+.footer-numbe:first-child{
+color: var(--footer-number);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.42px;
+margin-bottom: 9px;
 }
 .footer-number{
 color: var(--footer-number);

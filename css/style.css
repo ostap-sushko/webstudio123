@@ -84,6 +84,14 @@ gap: 50px;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+
+
+
+
+
+
+
+
 .hero {
   background-color: var(--footer-background);
   padding-top: 200px;
@@ -101,6 +109,7 @@ gap: 50px;
   width: 696px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 .hero-button {
 border-radius: 4px;
@@ -112,10 +121,14 @@ font-size: 16px;
 font-weight: 700;
 line-height: 1.87;
 letter-spacing: 0.96px;
+padding: 10px 32px;
+
+
 
 
 }
 .management{
+  padding-top: 94px;
   padding-top: 94px;
 }
 .management-list{
@@ -129,6 +142,7 @@ letter-spacing: 0.96px;
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .management-text {
   color: var(--additional-text);
@@ -137,6 +151,13 @@ letter-spacing: 0.96px;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+
+
+
+
+
+
+
 .work{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -156,6 +177,15 @@ letter-spacing: 0.96px;
   display: flex;
   gap: 30px;
 }
+
+
+
+
+
+
+
+
+
 
 .team{
   padding-top: 94px;
@@ -194,6 +224,7 @@ background-color: var(--main-color);
   font-weight: 500;
   line-height: 1.187;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
   
 }
 .team-text {
@@ -204,6 +235,16 @@ background-color: var(--main-color);
   line-height: 1.187;
   letter-spacing: 0.48px;
 }
+
+
+
+
+
+
+
+
+
+
 .footer {
   background-color: var(--footer-background);
   padding-top: 60px;
@@ -224,6 +265,7 @@ background-color: var(--main-color);
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+  margin-bottom: 20px;
 }
 
 .footer-link {
@@ -232,6 +274,15 @@ background-color: var(--main-color);
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  margin-bottom: 9px;
+}
+.footer-numbe:first-child{
+  color: var(--footer-number);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
 }
 .footer-number {
   color: var(--footer-number);
