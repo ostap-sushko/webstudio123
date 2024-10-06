@@ -123,7 +123,7 @@ letter-spacing: 0.48px;
 display: flex;
 flex-wrap: wrap;
 gap: 30px;
-margin-bottom: 94px;
+
 }
 .table-img{
 width: 370px;
@@ -167,16 +167,18 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
-margin-bottom: 20px;
+
+display: inline-block;
 }
 .logo-span{
-    color: var(--main-color);
+color: var(--main-color);
 font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
 margin-bottom: 20px;
+display: inline-block;
 }
 
 .footer-link{
@@ -186,19 +188,21 @@ font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
 margin-bottom: 9px;
+display: inline-block;
 }
-.footer-numbe:first-child{
-color: var(--footer-number);
-font-size: 14px;
-font-weight: 400;
-line-height: 1.71;
-letter-spacing: 0.42px;
-margin-bottom: 9px;
-}
+
+
 .footer-number{
 color: var(--footer-number);
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
+display: inline-block;
 }
+.footer-item{
+    margin-bottom: 9px;
+  }
+  .footer-item:last-child{
+    margin-bottom: 0px;
+  }
