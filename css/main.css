@@ -6,6 +6,7 @@
 --main-color:#FFF;
 --team-background:#F5F4FA;
 --footer-background:#2F303A;
+--border: #EEE;
 --footer-number:rgba(255, 255, 255, 0.60);;}
     
 body{font-family: Roboto}
@@ -107,9 +108,18 @@ letter-spacing: 0.28px;
  gap: 8px;
 }
 .btn-button{
-width: 125px;
-height: 38px;
+padding: 6px 23px;
 color:var(--text-color);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.6;
+letter-spacing: 0.48px;
+border-radius: 4px;
+}
+.btn-button:hover{
+padding: 6px 23px;
+background-color:var(--accent-color);
 text-align: center;
 font-size: 16px;
 font-weight: 500;
@@ -124,9 +134,15 @@ display: flex;
 flex-wrap: wrap;
 gap: 30px;
 
+
+}
+.table-item{
+    outline: 1px solid var(--border);
+    flex-basis: calc((100% - 60px) / 3);
 }
 .table-img{
-width: 370px;
+width: 100%;
+
 }
 .table-box{
     padding-top: 20px;
