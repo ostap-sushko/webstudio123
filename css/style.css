@@ -149,7 +149,7 @@ padding: 10px 32px;
   background-repeat: no-repeat;
   background-position: center;
 }
-.management-item:nth-child(2){
+.management-item:nth-child(2)::before{
   display: block;
   content: "";
   width: 270px;
@@ -161,7 +161,7 @@ padding: 10px 32px;
   background-repeat: no-repeat;
   background-position: center;
 }
-.management-item:nth-child(3){
+.management-item:nth-child(3)::before{
   display: block;
   content: "";
   width: 270px;
@@ -173,7 +173,7 @@ padding: 10px 32px;
   background-repeat: no-repeat;
   background-position: center;
 }
-.management-item:nth-child(4){
+.management-item:nth-child(4)::before{
   display: block;
   content: "";
   width: 270px;
