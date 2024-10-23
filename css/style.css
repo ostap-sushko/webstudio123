@@ -137,8 +137,56 @@ padding: 10px 32px;
   display: flex;
   gap: 30px;
 }
+.management-item::before{
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: var(--team-background);
+  margin-bottom: 30px;
+  background-image: url(../img/antenna.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.management-item:nth-child(2){
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: var(--team-background);
+  margin-bottom: 30px;
+  background-image: url(../img/clock.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.management-item:nth-child(3){
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: var(--team-background);
+  margin-bottom: 30px;
+  background-image: url(../img/diagram.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.management-item:nth-child(4){
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: var(--team-background);
+  margin-bottom: 30px;
+  background-image: url(../img/astronaut.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .management-item{
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 90px) / 4);
 }
 .management-title {
   color: var(--text-color);
