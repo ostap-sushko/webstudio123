@@ -95,7 +95,6 @@ gap: 50px;
 
 
 .hero {
-/* background-image: url(../img/heero.webp); */
 background-image: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(../img/heero.webp);
 background-repeat: no-repeat;
 background-position: center;
