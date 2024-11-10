@@ -7,7 +7,9 @@
 --team-background:#F5F4FA;
 --footer-background:#2F303A;
 --border: #EEE;
---footer-number:rgba(255, 255, 255, 0.60);;}
+--footer-number:rgba(255, 255, 255, 0.60);
+--border-bottom:#ECECEC;}
+
     
 body{font-family: Roboto}
 
@@ -22,6 +24,7 @@ outline: 1px solid red;
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: solid var(--border-bottom);
 }
 .header-box{
 display: flex;
