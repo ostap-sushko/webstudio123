@@ -53,7 +53,7 @@ body {
 .nav-list{
 display: flex;
 gap: 50px;
-margin-right: 315px;
+
 }
 .nav-link:hover {
   color: var(--accent-color);
@@ -71,7 +71,8 @@ margin-right: 315px;
 }
 .header-list{
 display: flex;
-gap: 50px;
+gap: 30px;
+margin-left: auto;
 }
 .header-link:hover {
   color: var(--accent-color);
@@ -79,6 +80,9 @@ gap: 50px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  .header-icon{
+    fill: var(--accent-color);
+  }
 }
 .header-link {
   color: var(--additional-text);
@@ -86,7 +90,9 @@ gap: 50px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .header-icon{
 width: 16px;
@@ -94,9 +100,12 @@ height: 12px;
 fill: var(--additional-text);
 }
 .header-item:last-child{
-width: 10px;
-height: 16px;
-fill: var(--additional-text);
+  .header-icon{
+    width: 10px;
+    height: 16px;
+    fill: var(--additional-text);
+  }
+
 }
 
 
@@ -326,13 +335,19 @@ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0
   line-height: 1.187;
   letter-spacing: 0.48px;
 }
+.team-link{
 
+}
+.team-icon{
+  width: 20px;
+height: 20px;
+}
 
 .client{
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.client-text{
+.client-title{
 color: var(--text-color);
 text-align: center;
 font-size: 36px;
