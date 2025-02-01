@@ -73,6 +73,12 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.aktiv{
+  color: var(--accent-color);
 }
 
 
@@ -95,6 +101,9 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -123,6 +132,9 @@ line-height: 1.6;
 letter-spacing: 0.48px;
 border-radius: 4px;
 border: none;
+    transition-property:box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-button:hover{
 padding: 6px 23px;
@@ -144,25 +156,47 @@ flex-wrap: wrap;
 gap: 30px;
 
 }
-.table-list:hover{
-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
+
 .table-item{
     outline: 1px solid var(--border);
     flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    transition-property:box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .table-img{
 width: 100%;
 
 }
+.img-text{
+  color: var(--main-color);
+font-size: 18px;
+font-weight: 400;
+line-height: 1.55;
+letter-spacing: 0.54px;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+padding: 63px 24px;
+background-color: rgba(33, 150, 243, 0.90);
+visibility: hidden;
+}
+.table-item:hover{
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  .img-text{
+    visibility: visible;
 
+  }
+  
+}
 .table-box{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-}
-.table-box:hover{
+
 
 }
 .table-title{
@@ -187,56 +221,97 @@ letter-spacing: 0.48px;
 
 
 
-.footer{
-padding-top: 60px;
-padding-bottom: 60px;
-background-color: var(--footer-background);
+.footer {
+  background-color: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer-logo{
-color: var(--accent-color);
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
+.footer-logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.logo-span {
+  color: var(--main-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+  
+  display: inline-block;
+}
 
-display: inline-block;
-}
-.logo-span{
-color: var(--main-color);
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
-margin-bottom: 20px;
-display: inline-block;
+
+.footer-link {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
+  display: inline-block;
 }
 .footer-address{
-    font-style: normal;
-  }
-.footer-link{
-color: var(--main-color);
-font-size: 14px;
-font-weight: 400;
-line-height: 1.71;
-letter-spacing: 0.42px;
-margin-bottom: 9px;
-display: inline-block;
+  font-style: normal;
 }
 
-
-.footer-number{
-color: var(--footer-number);
-font-size: 14px;
-font-weight: 400;
-line-height: 1.71;
-letter-spacing: 0.42px;
-display: inline-block;
+.footer-number {
+  color: var(--footer-number);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  display: inline-block;
 }
 .footer-item{
-    margin-bottom: 9px;
+  margin-bottom: 9px;
+}
+.footer-item:last-child{
+  margin-bottom: 0px;
+}
+.footer-title{
+  color: var(--main-color);
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+}
+.footer-box{
+  display: flex;
+}
+.footer-icons{
+  margin-left: 70px;
+}
+.div-items{
+  display: flex;
+gap: 10px;
+}
+.div-link:hover{
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  .footer-icon{
+ fill: var(--main-color);
   }
-  .footer-item:last-child{
-    margin-bottom: 0px;
-  }
+   }
+
+.footer-icon{
+  width: 20px;
+  height: 20px;
+  fill: var(--main-color);
+}
+.div-link{
+padding: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.10);
+border-radius: 50%;
+}

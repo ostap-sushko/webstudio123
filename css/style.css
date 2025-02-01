@@ -69,6 +69,9 @@ gap: 50px;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+.aktiv{
+  color: var(--accent-color);
+}
 .header-list{
 display: flex;
 gap: 30px;
@@ -93,17 +96,23 @@ margin-left: auto;
   display: flex;
   align-items: center;
   gap: 10px;
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon{
 width: 16px;
 height: 12px;
 fill: var(--additional-text);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-item:last-child{
   .header-icon{
     width: 10px;
     height: 16px;
-    fill: var(--additional-text);
+
   }
 
 }
@@ -149,7 +158,9 @@ line-height: 1.87;
 letter-spacing: 0.96px;
 padding: 10px 32px;
 
-
+    transition-property:box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -340,6 +351,9 @@ padding: 12px;
 display: flex;
 justify-content: center;
 align-items: center;
+    transition-property:background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .div-icon{
   width: 206px;
@@ -351,6 +365,9 @@ align-items: center;
   width: 20px;
 height: 20px;
 fill: var(--icon-border);
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover{
  background-color: var(--accent-color);
@@ -386,11 +403,17 @@ border: 1px solid var(--icon-border);
 display: flex;
 align-items: center;
 justify-content: center;
+    transition-property:border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon{
   width: 106px;
 height: 60px;
 fill: var(--icon-border);
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-item:hover{
   border: 1px solid var(--accent-color);
@@ -489,6 +512,9 @@ gap: 10px;
   width: 20px;
   height: 20px;
   fill: var(--main-color);
+      transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .div-link{
 padding: 12px;
@@ -497,6 +523,9 @@ justify-content: center;
 align-items: center;
 background-color: rgba(255, 255, 255, 0.10);
 border-radius: 50%;
+    transition-property:background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop{
   position: fixed;
@@ -507,6 +536,22 @@ border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.80);
   opacity: 1;
 }
+.footer-Email{
+margin-top: 4px;
+width: 358px;
+height: 50px;
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+resize: none;
+}
+
+
+
+
+
+
 
 
 
@@ -563,6 +608,9 @@ top: 8px;
 .modal-buttonsvg{
   width: 18px;
 height: 18px;
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title{
   color: #212121;
@@ -592,6 +640,9 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 margin-top: 4px;
 margin-bottom: 10px;
 padding-left: 42px;
+    transition-property:outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:hover,
 .modal-input:focus{
@@ -670,6 +721,9 @@ position: absolute;
 top: 50%;
 transform: translateY(-60%);
 left: 12px;
+    transition-property:fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-wrap{
   position: relative;
