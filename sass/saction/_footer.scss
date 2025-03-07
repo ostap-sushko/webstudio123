@@ -2,9 +2,12 @@
     background-color: $footer-background;
     padding-top: 60px;
     padding-bottom: 60px;
+
+&__box{
+display: flex;
 }
 
-.footer-logo {
+&__logo {
     color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
@@ -15,7 +18,7 @@
     display: inline-block;
 }
 
-.logo-span {
+&__span {
     color: $main-color;
     font-family: Raleway;
     font-size: 26px;
@@ -26,8 +29,11 @@
     display: inline-block;
 }
 
+&__address {
+    font-style: normal;
+}
 
-.footer-link {
+&__link {
     color: $main-color;
     font-size: 14px;
     font-weight: 400;
@@ -37,11 +43,15 @@
     display: inline-block;
 }
 
-.footer-address {
-    font-style: normal;
+&__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+            margin-bottom: 0px;
+        }
 }
 
-.footer-number {
+&__number {
     color: $footer-number;
     font-size: 14px;
     font-weight: 400;
@@ -50,47 +60,25 @@
     display: inline-block;
 }
 
-.footer-item {
-    margin-bottom: 9px;
+&__icons {
+    margin-left: 70px;
 }
 
-.footer-item:last-child {
-    margin-bottom: 0px;
-}
-
-.footer-title {
+&__title {
     color: $main-color;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
-
 }
 
-.footer-box {
-    display: flex;
-}
-
-.footer-icons {
-    margin-left: 70px;
-}
-
-.div-items {
+&__items {
     display: flex;
     gap: 10px;
 }
 
-.div-link:hover {
-    background-color: $accent-color;
-    border-radius: 50%;
-
-    .footer-icon {
-        fill: $main-color;
-    }
-}
-
-.footer-icon {
+&__icon {
     width: 20px;
     height: 20px;
     fill: $main-color;
@@ -99,7 +87,24 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.div-link {
+&__Email {
+    margin-top: 4px;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    resize: none;
+}
+}
+
+.icons{
+&__item{
+
+}
+
+&__link {
     padding: 12px;
     display: flex;
     justify-content: center;
@@ -109,17 +114,14 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            background-color: $accent-color;
+            border-radius: 50%;
+    
+            .footer-icon {
+                fill: $main-color;
+            }
+        }
 }
-
-
-
-.footer-Email {
-    margin-top: 4px;
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    resize: none;
 }
