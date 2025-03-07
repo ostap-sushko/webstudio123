@@ -1,57 +1,54 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--team-background);
+    background-color: $team-background;
+
+    subject {
+color: $text-color;
+text-align: center;
+font-size: 36px;font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
+margin-bottom: 50px;
 }
 
-.team-subject {
-    color: var(--text-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
+list {
+display: flex;
+gap: 30px;
+}
+img {
+width: 270px;
+height: 260px;
+                
+}
+title {
+color: $text-color;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.187;
+letter-spacing: 0.48px;
+margin-bottom: 10px;
+                                
 }
 
-.team-list {
-    display: flex;
-    gap: 30px;
+text {
+color: $additional-text;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.187;
+letter-spacing: 0.48px;
+}
 }
 
-.team-img {
-    width: 270px;
-    height: 260px;
-
-}
 
 .div-item {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: var(--main-color);
+    background-color: $main-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
-
-.team-title {
-    color: var(--text-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.187;
-    letter-spacing: 0.48px;
-    margin-bottom: 10px;
-
-}
-
-.team-text {
-    color: var(--additional-text);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.187;
-    letter-spacing: 0.48px;
-}
-
 .team-link {
     padding: 12px;
     display: flex;
@@ -72,17 +69,17 @@
 .team-icon {
     width: 20px;
     height: 20px;
-    fill: var(--icon-border);
+    fill: $icon-border;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 50%;
 
     .team-icon {
-        fill: var(--main-color);
+        fill: $main-color;
     }
 }

@@ -23,7 +23,7 @@
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    border: 1px solid var(--icon-border);
+    border: 1px solid $icon-border;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,16 +35,16 @@
 .client-icon {
     width: 106px;
     height: 60px;
-    fill: var(--icon-border);
+    fill: $icon-border;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-item:hover {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 
     .client-icon:hover {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
