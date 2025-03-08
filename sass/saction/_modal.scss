@@ -10,12 +10,12 @@
 
 }
 
-.is-hidden {
+.is__hidden {
     pointer-events: none;
     visibility: hidden;
 }
 
-.is-hidden .modal {
+.is__hidden .modal {
     transform: translate(0) rotate(0) scale(0);
 }
 

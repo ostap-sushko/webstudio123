@@ -1,69 +1,100 @@
 .btn {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    display: flex;
+padding-top: 94px;
+padding-bottom: 94px;
+display: flex;
+
+&__list {
+display: flex;
+margin-bottom: 50px;
+justify-content: center;
+gap: 8px;
 }
 
-.btn-list {
-    display: flex;
-
-    margin-bottom: 50px;
-    justify-content: center;
-    gap: 8px;
+&__button { 
+padding: 6px 23px;
+color: $text-color;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.6;
+letter-spacing: 0.48px;
+border-radius: 4px;
+border: none;
+transition-property: box-shadow, background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+&:hover {
+padding: 6px 23px;
+background-color: $accent-color;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.6;
+letter-spacing: 0.48px;
+box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+}
 }
 
-.btn-button {
-    padding: 6px 23px;
-    color: $text-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.48px;
-    border-radius: 4px;
-    border: none;
-    transition-property: box-shadow, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.table{
+
+    list {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
 }
 
-.btn-button:hover {
-    padding: 6px 23px;
-    background-color: $accent-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.48px;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-
+&__item {
+outline: 1px solid var(--border);
+flex-basis: calc((100% - 60px) / 3);
+position: relative;
+transition-property: box-shadow, background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+overflow: hidden;
+// width: 370px;
+//     height: 404px;
+&:hover {
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+                    
+.img__text {
+visibility: visible;
+transform: translateY(0);
+}
+                    
+}
+}
+&__img {
+width: 100%;
 }
 
-
-
-.table-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-
+&__box {
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 24px;
+padding-right: 24px;
 }
 
-.table-item {
-    outline: 1px solid var(--border);
-    flex-basis: calc((100% - 60px) / 3);
-    position: relative;
-    transition-property: box-shadow, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
+&__title {
+color: $text-color;
+font-size: 18px;
+font-weight: 700;
+line-height: 2;
+letter-spacing: 1.08px;
+margin-bottom: 4px;
 }
 
-.table-img {
-    width: 100%;
-
+&__text {
+color: $additional-text;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.85;
+letter-spacing: 0.48px;
+}
 }
 
-.img-text {
+.img__text {
     color: $main-color;
     font-size: 18px;
     font-weight: 400;
@@ -79,40 +110,4 @@
     transform: translateY(100%);
     transition-property: transform, visibility;
     transition-duration: 250ms;
-}
-
-.table-item:hover {
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-
-    .img-text {
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-}
-
-.table-box {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-
-
-}
-
-.table-title {
-    color: $text-color;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
-    margin-bottom: 4px;
-}
-
-.table-text {
-    color: $additional-text;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.85;
-    letter-spacing: 0.48px;
 }
