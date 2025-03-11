@@ -542,19 +542,25 @@ body {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
-.table list {
+.table__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+.table__items {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
 .table__item {
   outline: 1px solid var(--border);
   flex-basis: calc((100% - 60px) / 3);
-  position: relative;
   transition-property: box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
+  width: 370px;
+  height: 404px;
 }
 .table__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
