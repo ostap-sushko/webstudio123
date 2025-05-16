@@ -16,32 +16,70 @@
 <link rel="stylesheet" href="./style/main.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header__box">
-        <a href="./index.html" class="header__logo animate__animated animate__backInDown">Web<span class="header__span animate__animated animate__backInDown">Studio</span></a>
-        
-        <nav class="header__nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a href="./index.html" class="nav__link aktiv">Студія</a></li>
-            <li class="nav__item"><a href="./pages/portfolio.html" class="nav__link">Портфоліо</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
-        </ul>
-        </nav>
-            <ul class="header__list">
-                <li class="header__item"><a href="mailto:info@devstudio.com" class="header__link"><svg class="header__icon">
-                    <use href="./img/symbol-defs.svg#icon-envelope"></use>
-                </svg> info@devstudio.com</a></li>
-                <li class="header__item"><a href="tel:+380961111111" class="header__link"><svg class="header__icon">
-                    <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-                </svg> +38 096 111 11 11</a></li>
-            </ul>
-            <a href=""><svg class="header__burger">
-            <use href="./img/symbol-defs.svg#icon-menu"></use>
-        </svg></a>
-        </div>
-        
-    </header>
 
+    <header class="header">
+        <div class="container">
+          <a href="./index.html" class="header__logo"
+            ><span class="header__color">Web</span>Studio</a
+          >
+          <button type="button" class="header__menu" data-menu-open>
+            <svg class="header__burger">
+              <use href="./img/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link curent">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./pages/portfolio.html" class="nav__link">Портфоліо</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="mailto:info@devstudio.com" class="header__link"
+                ><svg class="header__icon">
+                  <use href="./img/symbol-defs.svg#icon-mail"></use>
+                  </svg><span class="header__cell">info@devstudio.com</span></a
+              >
+            </li>
+            <li class="header__item">
+              <a href="tel:+380961111111" class="header__link"
+                ><svg class="header__icon">
+                  <use href="./img/symbol-defs.svg#icon-tel"></use>
+                  </svg>
+                  <span class="header__cell">+38 096 111 11 11</span></a>
+            </li>
+          </ul>
+          <div class="menu is-hidden" data-menu>
+            <button type="button" class="menu__close" data-menu-close>
+              <svg class="menu__icon">
+                <use href="./img/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+              <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+  
+            </ul>
+            <ul class="menu__items">
+              <li class="menu__elem"><a href="tel:+380961111111" class="menu__contacttel">+38 096 111 11 11</a></li>
+              <li class="menu__elem"><a href="mailto:info@devstudio.com" class="menu__contact">info@devstudio.com</a></li>
+            </ul>
+  
+          <ul class="menu__social">
+            <li class="menu__el"><a href="#" class="menu__ciberlink">Instagram</a></li>
+            <li class="menu__el"><a href="#" class="menu__ciberlink">Twitter</a></li>
+            <li class="menu__el"><a href="#" class="menu__ciberlink">Facebook</a></li>
+            <li class="menu__el"><a href="#" class="menu__ciberlink">LinkedIn</a></li>
+          </ul>
+          </div>
+        </div>
+      </header>
 
 
     <main>
@@ -344,7 +382,7 @@
              <!--                                                           -->
 
     
-    <div class="backdrop is__hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
         <button type="button" class="modal__close" data-modal-close><svg class="modal__buttonsvg">
           <use href="./img/symbol-defs.svg#icon-close"></use>
@@ -388,10 +426,12 @@
         </div>
       </div>
       <script src="./js/modal.js"></script>
+      
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>
   AOS.init();
 </script>
+<script src="./js/mobile-menu.js"></script>
     </body>
   </html>
   
